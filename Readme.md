@@ -5,7 +5,7 @@ a variety of lambda expressions, static methods and functional interfaces.
 
 Start by cloning the repository:
  
-    $ git clone https://github.com/jimburton/sorting
+    $ git clone https://github.com/jimburton/sorting.git
 
 and load it in your IDE. Run the tests in the class `CI346.lambdaExercises.TestExercises`
 to test your progress. You will probably need to add the JUnit library to the project in your IDE
