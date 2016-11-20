@@ -36,11 +36,12 @@ public class Exercises {
             @Override
             public int compare(Name p1, Name p2){
                 return p1.getFirstName().compareTo(p2.getFirstName());
-             }
+            }
         };
+
         List<?> sortedList = people.stream()
-                            .sorted(firstNameSorter)
-                            .collect(Collectors.toList());
+                .sorted(firstNameSorter)
+                .collect(Collectors.toList());
         return sortedList.toString();
     }
 
@@ -49,7 +50,7 @@ public class Exercises {
      */
     public String exerciseOne() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((p1, p2) -> p1.getFirstName().compareTo(p2.getFirstName()))
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
@@ -62,7 +63,7 @@ public class Exercises {
      */
     public String exerciseTwo() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((p1, p2) -> p1.getName().length() - p2.getName().length())
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
@@ -82,7 +83,17 @@ public class Exercises {
      */
     public String exerciseThree() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((a, b) -> {
+                    boolean aHas = a.getName().contains("o");
+                    boolean bHas = b.getName().contains("o");
+                    if (aHas) {
+                        return (bHas) ? 0 : -1;
+                    } else if (bHas) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                })
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
@@ -99,11 +110,19 @@ public class Exercises {
     the list.
      */
     public static int sortByNameContainsString(String s, Name n1, Name n2) {
-        return 0;
+        boolean aHas = n1.getName().contains(s);
+        boolean bHas = n2.getName().contains(s);
+        if (aHas) {
+            return (bHas) ? 0 : -1;
+        } else if (bHas) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
     public String exerciseFour() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((p1, p2) -> Exercises.sortByNameContainsString("l", p1, p2))
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
@@ -120,12 +139,13 @@ public class Exercises {
 
      */
     public static int pickString(String s1, String s2, TwoStringPredicate predicate) {
-        return 0;
+        return predicate.isBetter(s1, s2) ? -1 : 0;
     }
 
     public String exerciseFive() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((p1, p2) -> Exercises.pickString(p1.getLastName(), p2.getLastName(),
+                        (s1, s2) -> s1.length() < s2.length()))
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
@@ -150,13 +170,14 @@ public class Exercises {
 
      */
 
-    public static <T extends Comparable> int pickElement(T e1, T e2) {
-        return 0;
+    public static <T extends Comparable> int pickElement(T e1, T e2, TwoElementPredicate<T> predicate) {
+        return predicate.isBetter(e1, e2) ? -1 : 0;
     }
 
     public String exerciseSix() {
         List<?> sortedList = people.stream()
-                .sorted(/* lambda expression goes here. */)
+                .sorted((p1, p2) -> Exercises.pickElement(p1.getFirstName(), p2.getFirstName(),
+                        (s1, s2) -> s1.length() > s2.length()))
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
