@@ -23,7 +23,7 @@ using a lambda expression.
 
 ## Exercise 2
 
-Sort the list by the *length* of the *entire name* of each Name object. Shorter names
+Sort the list by the *length* of the *entire name* of each `Name` object. Shorter names
 should come first, so your lambda expression should take two Name objects, `n1` and `n2`, and
 return a number less than 0 if the length of the name of `n1` is less than the length of the
 name of `n2`, 0 if the lengths are equal, and so on.
@@ -44,7 +44,7 @@ Remember that lambda expressions can contain more than one line.
 
 ## Exercise 4
     
-Complete the static method `sortByNameContainsString` below to create
+Complete the static method `sortByNameContainsString` to create
 a more reusable version of the sort from the previous exercise. As before,
 this method should return -1 if the *full name* of `n1` contains the string but
 the full name of `n2` doesn't, 0 if both or neither contain the string, and 1
