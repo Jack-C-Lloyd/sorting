@@ -9,8 +9,14 @@ Start by cloning the repository:
 
 and load it in your IDE. Run the tests in the class `CI346.lambdaExercises.TestExercises`
 to test your progress. You will probably need to add the JUnit library to the project in your IDE
-before you can do that. The project will require Java 8 since it uses lambdas and the `streams` API.
-Also, note that the list to be sorted is immutable, which is good practice, as explained in the lectures.
+before you can do that. 
+
+
+. [Adding JUnit support to an IntelliJ project](https://www.jetbrains.com/help/idea/2016.2/configuring-testing-libraries.html)
+. [Adding JUnit support to an Eclipse project](https://www.tutorialspoint.com/junit/junit_plug_with_eclipse.htm)
+
+The project will require Java 8 since it uses lambdas and the `streams` API.
+Also, note that the list to be sorted is immutable which is good practice, as explained in the lectures.
 
 ## Exercise 0
 
