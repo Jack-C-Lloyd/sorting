@@ -12,8 +12,8 @@ to test your progress. You will probably need to add the JUnit library to the pr
 before you can do that. 
 
 
-. [Adding JUnit support to an IntelliJ project](https://www.jetbrains.com/help/idea/2016.2/configuring-testing-libraries.html)
-. [Adding JUnit support to an Eclipse project](https://www.tutorialspoint.com/junit/junit_plug_with_eclipse.htm)
+* [Adding JUnit support to an IntelliJ project](https://www.jetbrains.com/help/idea/2016.2/configuring-testing-libraries.html)
+* [Adding JUnit support to an Eclipse project](https://www.tutorialspoint.com/junit/junit_plug_with_eclipse.htm)
 
 The project will require Java 8 since it uses lambdas and the `streams` API.
 Also, note that the list to be sorted is immutable which is good practice, as explained in the lectures.
