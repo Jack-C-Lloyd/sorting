@@ -4,7 +4,7 @@ package CI346.lambdaExercises;
  * A POJO that carries the information of a person's name.
  * Created by jb259 on 20/11/16.
  */
-public class Name implements Comparable {
+public class Name {
     private final String firstName;
     private final String lastName;
 
@@ -33,14 +33,5 @@ public class Name implements Comparable {
         sb.append(this.getName());
         sb.append("]");
         return sb.toString();
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        if (!(o instanceof Name)) {
-            return -1;
-        }
-        Name that = (Name) o;
-        return this.lastName.compareTo(that.lastName);
     }
 }
