@@ -50,7 +50,7 @@ public class Exercises {
      */
     public String exerciseOne() {
         List<?> sortedList = people.stream()
-                .sorted((p1, p2) -> p1.getFirstName().compareTo(p2.getFirstName()))
+                .sorted((p1, p2) -> p1.getFirstName().compareTo(p2.getLastName()))
                 .collect(Collectors.toList());
         return sortedList.toString();
     }
