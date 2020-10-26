@@ -1,6 +1,6 @@
 # Lambda expression and functional interfaces
 
-This is a lab exercise for CI346, focusing on sorting lists using
+This is a lab exercise for CI646, focusing on sorting lists using
 a variety of lambda expressions, static methods and functional interfaces.
 
 Start by cloning the repository:
