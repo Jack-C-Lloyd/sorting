@@ -1,7 +1,7 @@
-package CI346.lambdaExercises.test;
+package CI646.lambdaExercises.test;
 
 import static org.junit.Assert.*;
-import CI346.lambdaExercises.Exercises;
+import CI646.lambdaExercises.Exercises;
 
 /**
  * Created by jb259 on 20/11/16.

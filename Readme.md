@@ -7,7 +7,7 @@ Start by cloning the repository:
  
     $ git clone https://github.com/jimburton/sorting.git
 
-and load it in your IDE. Run the tests in the class `CI346.lambdaExercises.TestExercises`
+and load it in your IDE. Run the tests in the class `CI646.lambdaExercises.TestExercises`
 to test your progress. You will probably need to add the JUnit library to the project in your IDE
 before you can do that. 
 
@@ -15,8 +15,7 @@ before you can do that.
 * [Adding JUnit support to an IntelliJ project](https://www.jetbrains.com/help/idea/2016.2/configuring-testing-libraries.html)
 * Eclipse: Right click on Project Name, go to Build Path, Add Libraries and select JUnit4.
 
-The project will require Java 8 since it uses lambdas and the `streams` API.
-Also, note that the list to be sorted is immutable which is good practice, as explained in the lectures.
+Note that the collection to be sorted is immutable. This is always good practice, as explained in the lectures.
 
 ## Exercise 0
 
@@ -74,7 +73,7 @@ and should return true if the length of the first string is *less than* the leng
 ## Exercise 6
 
 Generalise the approach from Exercise 5 by creating a new functional interface in the package
-`CI346.lambdaExercises` called `TwoElementPredicate`. This interface should be parameterised by a type 
+`CI646.lambdaExercises` called `TwoElementPredicate`. This interface should be parameterised by a type 
 `T` that extends the `Comparable` interface in the same way as in the signature of the `pickElement` method below.
 
 The `TwoElementPredicate` interface should define a single static method, `isBetter`, that takes two

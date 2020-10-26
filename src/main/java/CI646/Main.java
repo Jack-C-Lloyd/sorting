@@ -1,6 +1,6 @@
-package CI346;
+package CI646;
 
-import CI346.lambdaExercises.Exercises;
+import CI646.lambdaExercises.Exercises;
 
 public class Main {
 

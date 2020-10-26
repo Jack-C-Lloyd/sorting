@@ -1,4 +1,4 @@
-package CI346.lambdaExercises;
+package CI646.lambdaExercises;
 
 /**
  * A functional interface defining a method, isBetter, that takes two Strings, s1 and s2,

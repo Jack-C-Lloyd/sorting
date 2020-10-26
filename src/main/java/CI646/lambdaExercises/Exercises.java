@@ -1,4 +1,4 @@
-package CI346.lambdaExercises;
+package CI646.lambdaExercises;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * CI346 Lab Exercise on sorting with lambda expressions and creating
+ * CI646 Lab Exercise on sorting with lambda expressions and creating
  * functional interfaces.
  *
  * Created by jb259 on 20/11/16.

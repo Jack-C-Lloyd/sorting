@@ -1,4 +1,4 @@
-package CI346.lambdaExercises;
+package CI646.lambdaExercises;
 
 /**
  * A POJO that carries the information of a person's name.
