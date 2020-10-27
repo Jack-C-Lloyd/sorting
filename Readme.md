@@ -8,14 +8,8 @@ Start by cloning the repository:
     $ git clone https://github.com/jimburton/sorting.git
 
 and load it in your IDE. Run the tests in the class `CI646.lambdaExercises.TestExercises`
-to test your progress. You will probably need to add the JUnit library to the project in your IDE
-before you can do that. 
-
-
-* [Adding JUnit support to an IntelliJ project](https://www.jetbrains.com/help/idea/2016.2/configuring-testing-libraries.html)
-* Eclipse: Right click on Project Name, go to Build Path, Add Libraries and select JUnit4.
-
-Note that the collection to be sorted is immutable. This is always good practice, as explained in the lectures.
+to test your progress. When you read the code, note that the collection to be sorted is 
+*immutable*. As discussed in the lectures, this is always good practice.
 
 ## Exercise 0
 
